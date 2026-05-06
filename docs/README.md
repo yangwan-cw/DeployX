@@ -12,7 +12,7 @@
 
 - `app`: Next.js App Router
 - `content/docs`: 文档 MDX 内容
-- `lib/source.ts`: Fumadocs source loader
+- `lib/source.tsx`: Fumadocs source loader
 - `source.config.ts`: Fumadocs 文档源配置
 
 ## 启动

@@ -3,18 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "CHOKIDAR_USEPOLLING=1 next dev -H 127.0.0.1",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.33",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
     "fumadocs-core": "^14.0.0",
     "fumadocs-mdx": "^11.0.0",
-    "fumadocs-ui": "^14.0.0"
+    "fumadocs-ui": "^14.0.0",
+    "lucide-react": "^1.14.0",
+    "next": "14.2.33",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@types/node": "^22.10.1",

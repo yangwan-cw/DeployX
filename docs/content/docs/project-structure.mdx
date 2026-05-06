@@ -1,0 +1,33 @@
+---
+title: 项目结构
+description: 了解 DeployX 仓库中后端、前端和文档站的目录职责
+---
+
+# 项目结构
+
+DeployX 采用多项目仓库结构，当前包含后端服务、前端应用和文档站。
+
+```text
+DeployX/
+├── backend/     # Go 后端服务
+├── frontend/    # React + Vite 前端项目
+├── docs/        # Next.js + Fumadocs 文档站
+├── scripts/     # 根目录脚本
+├── logs/        # 日志目录
+├── Makefile     # 项目构建
+└── README.md    # 项目文档
+```
+
+## Backend
+
+`backend` 是 Go 后端服务，负责配置加载、接口路由、应用编排和后续部署能力。
+
+## Frontend
+
+`frontend` 是 React + Vite 前端项目，负责提供应用管理、部署配置和状态查看等操作界面。
+
+## Docs
+
+`docs` 是文档站，基于 Next.js、Fumadocs 和 MDX 构建，用于维护项目说明、使用指南和开发文档。
+
+

@@ -1,14 +1,55 @@
 ---
-title: 文档首页
-description: DeployX 文档站点首页
+title: 关于 DeployX
+description: DeployX 是一个面向内部团队的轻量级 DevOps 应用交付平台，主要服务于研发、测试和运维人员。
+icon: info
 ---
 
-# 文档首页
+import { DocsImage } from '@/components/mdx/docs-image'
 
-欢迎使用 DeployX 文档。
+DeployX 是一个面向内部团队的轻量级 DevOps 应用交付平台，主要服务于研发、测试和运维人员。
+它围绕“应用”这一核心资产，提供从应用创建、部署配置、容器启动、状态监控、访问跳转、更新发布到部署记录追踪的一体化能力。
 
-- 文档内容：MDX
-- 文档框架：Fumadocs
-- 前端框架：Next.js 14 + React
-- 样式/UI：Fumadocs UI + Tailwind CSS（可扩展 Radix UI）
-- 构建方式：Next.js 静态站点构建
+## 开发初心
+我最初开发是为了解决一个团队内的很小需求，为了解决团队寻找应用反复查找浏览器，没有统一路口，这一小细节我记在了心中，于是乎我开发了我的 **v0.0.1**
+其实就是一张表格，但经过自己收集，大家好像对此表格有不错的反馈。但是我还是觉得简陋了。为了我大家的观感，体验，好用提升。我决定升级。这一升级我需要多少时间
+挥洒在这。但是一切值得吧。希望大家能够认为好用吧。
+
+## 为什么需要 DeployX
+
+在日常交付过程中，开发人员通常需要手动维护 Dockerfile、docker-compose.yml 或 Kubernetes YAML，还要处理配置文件、环境变量、中间件依赖和目标服务器信息。
+
+这些工作重复、容易出错，也会让应用交付依赖少数熟悉部署细节的人。
+
+DeployX 希望把这些流程收敛到统一的平台中，通过可视化表单和部署向导，让团队可以用更标准、更可追踪的方式完成应用发布。
+
+
+
+## 核心能力
+
+- 应用创建与基础信息管理
+- 部署配置和运行参数维护
+- 容器启动、停止和状态查看
+- 应用访问地址跳转
+- 应用更新发布
+- 部署记录追踪
+- 多环境配置管理
+- 后续可扩展 Docker、Docker Compose 和 Kubernetes 部署资源生成
+
+
+## 项目组成
+
+当前 DeployX 仓库包含三个主要项目：
+
+- Backend：Go 后端服务，负责配置、接口、部署任务和平台能力编排
+- Frontend：React + Vite 前端项目，负责应用管理和部署操作界面
+- Docs：Next.js + Fumadocs 文档站，负责项目说明、使用指南和开发文档
+
+## 从 0 到 1 应用发布
+<DocsImage
+    src="/images/img.png"
+    alt="DeployX 示例图"
+    caption="DeployX 页面示例"
+    maxWidth={900}
+    radius="xl"
+    shadow="lg"
+/>

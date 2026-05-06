@@ -1,4 +1,15 @@
 {
   "title": "DeployX 文档",
-  "pages": ["index", "getting-started"]
+  "pages": [
+    "---入门---",
+    "getting-started",
+    "index",
+    "concepts",
+    "project-structure",
+    "---使用指南---",
+    "application-management",
+    "deployment-config",
+    "environment-management",
+    "release-history"
+  ]
 }
