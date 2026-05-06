@@ -1,0 +1,11 @@
+[app]
+name = "deployx"
+env = "prod"
+version = "1.0.1"
+
+[server]
+addr = ":8091"
+mode = "release"
+
+[log]
+level = "info"
